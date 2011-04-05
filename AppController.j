@@ -12,25 +12,28 @@
 @implementation AppController : CPObject
 {
     CPWindow    theWindow; //this "outlet" is connected automatically by the Cib
-	var me;
+	CPMutableArray persons;
 }
 
 -(id)init
 {
-	// This is called when the application is done loading.
-	me = [[Person alloc] init];
-	[me setValue:@"John" forKey:@"name"];
-	[me setValue:[CPNumber numberWithFloat:1.5] forKey:@"age"];
-	[me setValue:[CPNumber numberWithBool:YES] forKey:@"isMarried"];
+	persons = [[CPMutableArray alloc] init];
+	
+	for (var i = 100 - 1; i >= 0; i--){
+		// This is called when the application is done loading.
+		var me = [[Person alloc] init];
+		[me setValue:@"John" + i forKey:@"name"];
+		[me setValue:[CPNumber numberWithFloat:i] forKey:@"age"];
+		[me setValue:[CPNumber numberWithBool:(i % 2 == 0)] forKey:@"isMarried"];
+		[persons addObject:me];
+
+	};
 	
 	return self;
 }
 
 - (void)applicationDidFinishLaunching:(CPNotification)aNotification
 {
-//	me.name = @"bla";
-	
-	[me setValue:@"bla" forKey:@"name"];
 }
 
 - (void)awakeFromCib
@@ -43,5 +46,7 @@
     // In this case, we want the window from Cib to become our full browser window
     [theWindow setFullBridge:YES];
 }
+
+
 
 @end
