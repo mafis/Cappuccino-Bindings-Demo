@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="372"/>
+			<integer value="509"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -275,20 +275,20 @@
 												<int key="NSPeriodicInterval">25</int>
 											</object>
 										</object>
-										<object class="NSTextField" id="58365621">
+										<object class="NSTextField" id="841073486">
 											<reference key="NSNextResponder" ref="790232325"/>
 											<int key="NSvFlags">268</int>
 											<string key="NSFrame">{{12, 66}, {145, 22}}</string>
 											<reference key="NSSuperview" ref="790232325"/>
 											<bool key="NSEnabled">YES</bool>
-											<object class="NSTextFieldCell" key="NSCell" id="362397054">
+											<object class="NSTextFieldCell" key="NSCell" id="797826624">
 												<int key="NSCellFlags">-1804468671</int>
 												<int key="NSCellFlags2">272630784</int>
 												<string key="NSContents"/>
 												<reference key="NSSupport" ref="6454184"/>
-												<reference key="NSControlView" ref="58365621"/>
+												<reference key="NSControlView" ref="841073486"/>
 												<bool key="NSDrawsBackground">YES</bool>
-												<object class="NSColor" key="NSBackgroundColor" id="547406554">
+												<object class="NSColor" key="NSBackgroundColor" id="553532476">
 													<int key="NSColorSpace">6</int>
 													<string key="NSCatalogName">System</string>
 													<string key="NSColorName">textBackgroundColor</string>
@@ -315,7 +315,7 @@
 								<int key="NSCellFlags2">0</int>
 								<string key="NSContents">Person</string>
 								<reference key="NSSupport" ref="26"/>
-								<reference key="NSBackgroundColor" ref="547406554"/>
+								<reference key="NSBackgroundColor" ref="553532476"/>
 								<object class="NSColor" key="NSTextColor">
 									<int key="NSColorSpace">3</int>
 									<bytes key="NSWhite">MCAwLjgwMDAwMDAxMTkAA</bytes>
@@ -336,17 +336,6 @@
 			</object>
 			<object class="NSCustomObject" id="635946545">
 				<string key="NSClassName">AppController</string>
-			</object>
-			<object class="NSObjectController" id="687748129">
-				<object class="NSMutableArray" key="NSDeclaredKeys">
-					<bool key="EncodedWithXMLCoder">YES</bool>
-					<string>name</string>
-					<string>age</string>
-					<string>isMarried</string>
-				</object>
-				<string key="NSObjectClassName">Person</string>
-				<bool key="NSEditable">YES</bool>
-				<object class="_NSManagedProxy" key="_NSManagedProxy"/>
 			</object>
 			<object class="NSArrayController" id="519394252">
 				<object class="NSMutableArray" key="NSDeclaredKeys">
@@ -384,38 +373,6 @@
 						<reference key="destination" ref="972006081"/>
 					</object>
 					<int key="connectionID">459</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">value: selection.age</string>
-						<reference key="source" ref="176626971"/>
-						<reference key="destination" ref="687748129"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="176626971"/>
-							<reference key="NSDestination" ref="687748129"/>
-							<string key="NSLabel">value: selection.age</string>
-							<string key="NSBinding">value</string>
-							<string key="NSKeyPath">selection.age</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">472</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">value: selection.isMarried</string>
-						<reference key="source" ref="427211554"/>
-						<reference key="destination" ref="687748129"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="427211554"/>
-							<reference key="NSDestination" ref="687748129"/>
-							<string key="NSLabel">value: selection.isMarried</string>
-							<string key="NSBinding">value</string>
-							<string key="NSKeyPath">selection.isMarried</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">474</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
@@ -467,51 +424,67 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
-						<string key="label">contentObject: selection.self</string>
-						<reference key="source" ref="687748129"/>
+						<string key="label">value: selection.name</string>
+						<reference key="source" ref="841073486"/>
 						<reference key="destination" ref="519394252"/>
 						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="687748129"/>
+							<reference key="NSSource" ref="841073486"/>
 							<reference key="NSDestination" ref="519394252"/>
-							<string key="NSLabel">contentObject: selection.self</string>
-							<string key="NSBinding">contentObject</string>
-							<string key="NSKeyPath">selection.self</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">506</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">enabled: selection.isMarried</string>
-						<reference key="source" ref="427211554"/>
-						<reference key="destination" ref="687748129"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="427211554"/>
-							<reference key="NSDestination" ref="687748129"/>
-							<string key="NSLabel">enabled: selection.isMarried</string>
-							<string key="NSBinding">enabled</string>
-							<string key="NSKeyPath">selection.isMarried</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">511</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">value: selection.name</string>
-						<reference key="source" ref="58365621"/>
-						<reference key="destination" ref="687748129"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="58365621"/>
-							<reference key="NSDestination" ref="687748129"/>
 							<string key="NSLabel">value: selection.name</string>
 							<string key="NSBinding">value</string>
 							<string key="NSKeyPath">selection.name</string>
 							<int key="NSNibBindingConnectorVersion">2</int>
 						</object>
 					</object>
-					<int key="connectionID">516</int>
+					<int key="connectionID">517</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: selection.age</string>
+						<reference key="source" ref="176626971"/>
+						<reference key="destination" ref="519394252"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="176626971"/>
+							<reference key="NSDestination" ref="519394252"/>
+							<string key="NSLabel">value: selection.age</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">selection.age</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">519</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: selection.isMarried</string>
+						<reference key="source" ref="427211554"/>
+						<reference key="destination" ref="519394252"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="427211554"/>
+							<reference key="NSDestination" ref="519394252"/>
+							<string key="NSLabel">value: selection.isMarried</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">selection.isMarried</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">521</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">enabled: selection.isMarried</string>
+						<reference key="source" ref="427211554"/>
+						<reference key="destination" ref="519394252"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="427211554"/>
+							<reference key="NSDestination" ref="519394252"/>
+							<string key="NSLabel">enabled: selection.isMarried</string>
+							<string key="NSBinding">enabled</string>
+							<string key="NSKeyPath">selection.isMarried</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">523</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -565,11 +538,6 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">450</int>
 						<reference key="object" ref="635946545"/>
-						<reference key="parent" ref="1049"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">460</int>
-						<reference key="object" ref="687748129"/>
 						<reference key="parent" ref="1049"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -632,7 +600,7 @@
 						<reference key="object" ref="1056975268"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="58365621"/>
+							<reference ref="841073486"/>
 							<reference ref="176626971"/>
 							<reference ref="427211554"/>
 						</object>
@@ -668,17 +636,17 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">513</int>
-						<reference key="object" ref="58365621"/>
+						<reference key="object" ref="841073486"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="362397054"/>
+							<reference ref="797826624"/>
 						</object>
 						<reference key="parent" ref="1056975268"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">514</int>
-						<reference key="object" ref="362397054"/>
-						<reference key="parent" ref="58365621"/>
+						<reference key="object" ref="797826624"/>
+						<reference key="parent" ref="841073486"/>
 					</object>
 				</object>
 			</object>
@@ -694,7 +662,6 @@
 					<string>371.editorWindowContentRectSynchronizationRect</string>
 					<string>371.windowTemplate.maxSize</string>
 					<string>372.IBPluginDependency</string>
-					<string>460.IBPluginDependency</string>
 					<string>465.IBPluginDependency</string>
 					<string>465.IBViewBoundsToFrameTransform</string>
 					<string>466.IBPluginDependency</string>
@@ -724,7 +691,6 @@
 					<integer value="1"/>
 					<string>{{33, 99}, {480, 360}}</string>
 					<string>{3.40282e+38, 3.40282e+38}</string>
-					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<object class="NSAffineTransform">
@@ -771,7 +737,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">516</int>
+			<int key="maxID">523</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
