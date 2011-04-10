@@ -1,6 +1,7 @@
 @implementation Person : CPObject
 {
-	CPString name;
+	CPString firstName @accessors();
+	CPString lastName @accessors();
 	float age;
 	BOOL isMarried;
 }

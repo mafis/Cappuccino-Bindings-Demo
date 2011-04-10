@@ -22,7 +22,8 @@
 	for (var i = 100 - 1; i >= 0; i--){
 		// This is called when the application is done loading.
 		var me = [[Person alloc] init];
-		[me setValue:@"John" + i forKey:@"name"];
+		[me setValue:@"John" + i forKey:@"firstName"];
+		[me setValue:@"Brown" + i forKey:@"lastName"];
 		[me setValue:[CPNumber numberWithFloat:i] forKey:@"age"];
 		[me setValue:[CPNumber numberWithBool:(i % 2 == 0)] forKey:@"isMarried"];
 		[persons addObject:me];
