@@ -1,4 +1,4 @@
-@implementation PersonValueTransformer : NSValueTransformer
+@implementation PersonValueTransformer : CPValueTransformer
 {
 }
 

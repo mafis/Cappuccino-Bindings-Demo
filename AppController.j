@@ -8,6 +8,7 @@
 
 @import <Foundation/CPObject.j>
 @import "Person.j"
+@import "PersonValueTransformer.j"
 
 @implementation AppController : CPObject
 {
