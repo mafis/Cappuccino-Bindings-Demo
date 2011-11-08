@@ -27,6 +27,25 @@
 		[me setValue:@"Brown" + i forKey:@"lastName"];
 		[me setValue:[CPNumber numberWithFloat:i] forKey:@"age"];
 		[me setValue:[CPNumber numberWithBool:(i % 2 == 0)] forKey:@"isMarried"];
+		
+		switch(i % 3){
+			case 0:
+				[me setValue:CPOnState forKey:@"isFemale"];
+				[me setValue:CPOffState forKey:@"isMale"];
+				[me setValue:CPOffState forKey:@"isTBD"];			
+			break;
+			case 1:
+				[me setValue:CPOffState forKey:@"isFemale"];
+				[me setValue:CPOnState forKey:@"isMale"];
+				[me setValue:CPOffState forKey:@"isTBD"];			
+			break;
+			case 2:
+				[me setValue:CPOffState forKey:@"isFemale"];
+				[me setValue:CPOffState forKey:@"isMale"];
+				[me setValue:CPOnState forKey:@"isTBD"];
+			break;
+		}
+				
 		[persons addObject:me];
 
 	};
